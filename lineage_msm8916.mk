@@ -523,11 +523,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic \
     android.hardware.usb.gadget@1.0-impl \
     android.hardware.usb.gadget@1.0-service
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
     
 # Vendor service manager
 PRODUCT_PACKAGES += \
