@@ -3,13 +3,6 @@
 /vendor/bin/adsprpcd                                        u:object_r:adsprpcd_exec:s0
 /vendor/bin/irsc_util                                       u:object_r:irsc_util_exec:s0
 /vendor/bin/mm-qcamera-daemon                               u:object_r:mm-qcamerad_exec:s0
-/vendor/bin/netmgrd                                         u:object_r:netmgrd_exec:s0
-/vendor/bin/qmuxd                                           u:object_r:qmuxd_exec:s0
-/vendor/bin/rmt_storage                                     u:object_r:rmt_storage_exec:s0
-#/system/bin/sh                                              u:object_r:shell_exec:s0
-
-# Radio
-/dev/alarm u:object_r:alarm_device:s0
 
 # Rootfs
 /firmware                                                                                  u:object_r:firmware_file:s0
@@ -65,10 +58,6 @@
 
 # Power stats
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock          u:object_r:hal_power_stats_default_exec:s0
-
-# RIL
-#/(vendor|system/vendor)/bin/init\.link_ril_db\.sh                                          u:object_r:vendor_file:s0
-/data/misc/radio/modem_config                                                              u:object_r:radio_core_data_file:s0
 
 # Sysfs entry for the FastCharge node
 /sys/kernel/fast_charge(/.*)?                           u:object_r:sysfs_fastcharge_switch:s0
