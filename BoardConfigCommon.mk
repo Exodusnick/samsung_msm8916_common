@@ -240,6 +240,7 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libloc_api_v02.so|liblocapibase_shim.so \
     /system/vendor/bin/netmgrd|libshim_ril.so \
     /system/vendor/lib/libdsi_netctrl.so|libshim_ril.so \
+    /system/vendor/lib/libqmi_client_qmux.so|libshim_ril.so \
     /system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|libbase_shim.so \
 
 
