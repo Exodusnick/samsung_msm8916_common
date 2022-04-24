@@ -48,9 +48,6 @@
 # Gatekeeper
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software	      u:object_r:hal_gatekeeper_default_exec:s0
 
-# GPS
-/data/vendor/gps(/.*)?               u:object_r:vendor_gps_file:s0
-
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.msm8916              u:object_r:hal_light_default_exec:s0
 /sys/class/leds(/.*)? u:object_r:sysfs_leds:s0
