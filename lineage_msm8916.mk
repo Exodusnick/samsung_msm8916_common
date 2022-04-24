@@ -133,10 +133,6 @@ PRODUCT_PACKAGES += \
     libcamera_shim \
     libmm-qcamera
 
-# Connectivity Engine support
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     TrebuchetQuickStep \
@@ -391,11 +387,20 @@ PRODUCT_COPY_FILES += \
     
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
+    librmnetctl \
+    libcnefeatureconfig \
     libshim_secril \
     libshim_ril \
     libxml2 \
     macloader \
-    libcutils_shim
+    libcutils_shim \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext  
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
@@ -450,8 +455,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	libril \
 	librilutils \
-	rild \
-	librmnetctl 
+	rild
 
 # Security configuration file
 PRODUCT_COPY_FILES += \
