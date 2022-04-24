@@ -1,3 +1,4 @@
 allow hal_gnss_qti hal_health_default:binder { call transfer };
 allow hal_gnss_qti hal_health_hwservice:hwservice_manager find;
 allow hal_gnss_qti ssr_device:chr_file {read open};
+allow hal_gnss_qti default_android_hwservice:hwservice_manager {find};
