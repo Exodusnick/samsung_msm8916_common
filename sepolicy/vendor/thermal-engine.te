@@ -7,5 +7,6 @@ allow thermal-engine sysfs_spmi_dev:dir { open read search };
 allow thermal-engine sysfs_spmi_dev:lnk_file read;
 allow thermal-engine default_prop:file { open read getattr };
 allow thermal-engine radio_prop:file { open read getattr };
+allow thermal-engine thermal-engine:capability { sys_resource };
 
 r_dir_file(thermal-engine, sysfs_batteryinfo)
