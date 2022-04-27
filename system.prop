@@ -137,8 +137,9 @@ persist.rild.nitz_short_ons_3=""
 ril.subscription.types=NV,RUIM 
 DEVICE_PROVISIONED=1 
 ro.multisim.set_audio_params=true
-vendor.rild.libpath=/vendor/lib/libsec-ril.so
-ro.telephony.iwlan_operation_mode=legacy
+vendor.sec.rild.libpath=/vendor/lib/libsec-ril.so
+vendor.sec.rild.libpath2=/vendor/lib/libsec-ril-dsds.so
+
 
 # SAMP SPCM
 sys.config.samp_spcm_enable=true 
