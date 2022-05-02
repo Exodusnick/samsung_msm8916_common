@@ -169,11 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
-# Dolby
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.feature.dolby_enable=true \
-    vendor.audio.dolby.ds2.enabled=true \
-    vendor.audio.dolby.ds2.hardbypass=false
 
 # Surface Flinger properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -193,14 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=21 \
     ro.vndk.version=current
 
-# Debloater
-PRODUCT_PACKAGES += \
-    RemoveCamera2 \
-    RemoveGallery2 \
-    RemoveEleven \
-    RemoveJely \
-    RemoveEtar \
-    RemoveAudioFX
+
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -244,11 +232,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software \
     android.hardware.gatekeeper@1.0.vendor 
-
-# Google Photos
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
-
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -509,10 +492,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Su Binary
-PRODUCT_PACKAGES += \
-    phh-su \
-    SuperUser
 
 # Tethering
 PRODUCT_PACKAGES += \
