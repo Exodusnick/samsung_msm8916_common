@@ -26,7 +26,7 @@ $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
 $(call inherit-product-if-exists, vendor/samsung/msm8916-common/msm8916-common-vendor.mk)
 
 # Inherit Android go config
-$(call inherit-product, $(DEVICE_PATH)/android_go.mk)
+#$(call inherit-product, $(DEVICE_PATH)/android_go.mk)
 
 # Include system.prop 
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
